@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #app {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #fechas{
+    display: flex;
+    justify-content: center;
+  }
+  #inicio, #fin{
+    margin: 20px;
+  }
+  #flechaAbajo{
+    width: 30px;
+  }
+  #tareaComFall{
+    display: flex;
+    justify-content: center;
+  }
+  #tareasComp, #tareasFall{
+    margin: 20px;
+    border: 1px solid;
+    width: 40%;
+    height: auto;
+  }
+  #tareasPen{
+    width: 60%;
+    border: 1px solid;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #diferentesTareas{
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    
+  }
+  .rutaImagen2{
+    width: 70px;
+
+  }
+  button{
+    width: 60%;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  #content {
+    display: flex;
+    border: 1px solid red; /* Borde de 1 píxel sólido de color gris claro */
+    padding: 10px; /* Espaciado interno de 10 píxeles */
+    margin-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    width: 90%; /* Ancho de 300 píxeles */
+    height: auto; /* Altura automática */
+  }
+  
+  @media(max-width:400px){
+    #app{
+        display: block;
+
+    }
+    #fechas{
+        display: block;
+    }
+    #tareaComFall{
+        /* display: block; */
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        place-items: center;
+    }
+    #tareaT{
+        width: 100%;
+    }
+    #tareasComp, #tareasPen, #tareasFall{
+        width: 80%;
+    }
+  }

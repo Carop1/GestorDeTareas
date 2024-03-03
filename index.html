@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Tareas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Gestor de Tareas</h1>
+    <div>
+        <div>
+            <label for="tareaT">Tarea:</label>
+            <br>
+            <input type="text" name="tarea" size="40" id="tareaT">
+        </div>
+        <div id="fechas">
+            <div id="inicio">
+                <label for="fechaInicio">Fecha de Inicio:</label>
+                <br>
+                <input type="date" id="fechaInicio">
+            </div>
+            <div  id="fin">
+                <label for="fechaFin">Fecha de Fin:</label>
+                <br>
+                <input type="date" id="fechaFin">
+            </div>
+        </div>
+
+      <label for="nivel">Nivel de Urgencia:</label>
+      <select id="nivel">
+        <option value="urgente">Urgente</option>
+        <option value="moderado">Moderado</option>
+        <option value="normal">Normal</option>
+      </select>
+
+      <div>
+        <button onclick="agregarTarea()"><img src="images/flechaAbajo.png" alt="flechaAbajo" id="flechaAbajo"></button>
+      </div>
+    </div>
+    <div id="diferentesTareas">
+        <div id="tareasPen">
+            <h2>Tareas Pendientes</h2>
+            <ul id="tareasPendientes"></ul>
+        </div>
+
+        <div id="tareaComFall">
+            <div id="tareasComp">
+                <h2>Tareas Completadas</h2>
+                <ul id="tareasCompletadas"></ul>
+            </div>
+
+            <div id="tareasFall">
+                <h2>Tareas Fallidas</h2>
+                <ul id="tareasFallidas"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
